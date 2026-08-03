@@ -290,6 +290,9 @@ async def status(ctx: commands.Context):
     if ctx.guild is None or get_tier(ctx.author) is None:
         await _reply(ctx, "You don't have permission to use this command.")
         return
+@bot.hybrid_command(name="developer", description="Who is the developer of this bot?")        
+async def developer(ctx: commands.Context):
+    await _reply(ctx, "The developer of this bot is BILLY.")     
 
     tier_name, tier_cfg = get_tier(ctx.author)
     if tier_cfg["max_count"] is None:
