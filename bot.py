@@ -283,4 +283,3 @@ if __name__ == "__main__":
         bot.run(token)
     else:
         logger.warning("DISCORD_TOKEN environment variable not set. Bot can be tested via unit tests.")
-```
