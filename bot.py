@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("discord_bot")
 
 DATA_FILE = os.environ.get("BOT_DATA_FILE", "bot_data.json")
-BILLY_USER_ID = int(os.environ.get("BILLY_USER_ID", "123456789012345678"))
+BILLY_USER_ID = int(os.environ.get("BILLY_USER_ID", "1391015337801154580"))
 
 def load_data() -> dict:
     if os.path.exists(DATA_FILE):
