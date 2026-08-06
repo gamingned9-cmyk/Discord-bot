@@ -740,7 +740,7 @@ async def setup_cmd(
 @setup_cmd.error
 async def setup_cmd_error(ctx: commands.Context, error):
     if isinstance(error, NotBilly):
-        await _reply(ctx, "You're not BILLY.")
+        await _reply(ctx, "Poyi Billye vlik bro ninak kazhiv illa.")
         await log_action(ctx.guild, "setup", ctx.author, False, reason="Not the authorized BILLY user")
     elif isinstance(error, commands.MissingRequiredArgument):
         await _reply(ctx, "Usage: `/setup kind:<repeat|nickname|modlog|announce|botlog> channel:#channel`")
