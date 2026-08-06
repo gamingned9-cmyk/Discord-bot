@@ -587,7 +587,7 @@ async def repeat(ctx: commands.Context, count: int, interval_seconds: float, *, 
 
     max_count = tier_cfg["max_count"]
     if max_count is not None and count > max_count:
-        await _reply(ctx, f"Your access level allows a maximum of {max_count} messages per job (you asked for {count}).")
+        await _reply(ctx, f"Ninak {max_count} ennam ayacha pore enthina {count} ennam. Kazhap edutha ban adikum funde ninne.")
         await log_action(
             ctx.guild, "repeat", ctx.author, False,
             reason=f"Requested count={count} exceeds tier max of {max_count}",
