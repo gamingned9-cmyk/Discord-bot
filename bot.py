@@ -132,7 +132,7 @@ from dotenv import load_dotenv
 load_dotenv()  # reads config from a local .env file (no-op if none exists)
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-PREFIX = os.getenv("DISCORD_PREFIX", "!")
+PREFIX = os.getenv("DISCORD_PREFIX", "/")
 
 # Optional: set to sync slash commands instantly to one server while testing.
 GUILD_ID = os.getenv("DISCORD_GUILD_ID")
